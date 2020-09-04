@@ -34,18 +34,7 @@ public class Person {
 	}
 
 
-	/*
-	@OneToMany(mappedBy="owner")
-	public CreditCard getCreditCard() {
-		return creditCard;
-	}
 
-	public void setCreditCard(CreditCard creditCard) {
-		this.creditCard = creditCard;
-	}
-	*/
-
-	//@ManyToMany(mappedBy="residents")
 	@ManyToMany
 	@JoinTable(
 			name = "person_lives_at_address",
