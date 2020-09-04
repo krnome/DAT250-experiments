@@ -8,14 +8,14 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="lib" path="C:/Apache/db-derby-10.15.2.0-bin/lib/derbytools.jar"/>
-	<classpathentry kind="lib" path="C:/Users/tohov/DAT250/exp2/lib/derby.jar"/>
-	<classpathentry kind="lib" path="C:/Users/tohov/DAT250/exp2/lib/eclipselink.jar"/>
-	<classpathentry kind="lib" path="C:/Users/tohov/DAT250/exp2/lib/jakarta.persistence.source_2.2.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/tohov/DAT250/exp2/lib/jakarta.persistence_2.2.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/tohov/DAT250/exp2/lib/org.eclipse.persistence.jpa.modelgen.source_2.7.7.v20200504-69f2c2b80d.jar"/>
-	<classpathentry kind="lib" path="C:/Users/tohov/DAT250/exp2/lib/org.eclipse.persistence.jpa.modelgen_2.7.7.v20200504-69f2c2b80d.jar"/>
-	<classpathentry kind="lib" path="C:/Users/tohov/DAT250/exp2/lib/org.eclipse.persistence.jpars.source_2.7.7.v20200504-69f2c2b80d.jar"/>
-	<classpathentry kind="lib" path="C:/Users/tohov/DAT250/exp2/lib/org.eclipse.persistence.jpars_2.7.7.v20200504-69f2c2b80d.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tohov/OneDrive/Documents/GitHub/DAT250-experiments/exp2/lib/derby.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tohov/OneDrive/Documents/GitHub/DAT250-experiments/exp2/lib/eclipselink.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tohov/OneDrive/Documents/GitHub/DAT250-experiments/exp2/lib/jakarta.persistence.source_2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tohov/OneDrive/Documents/GitHub/DAT250-experiments/exp2/lib/jakarta.persistence_2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tohov/OneDrive/Documents/GitHub/DAT250-experiments/exp2/lib/org.eclipse.persistence.jpa.modelgen.source_2.7.7.v20200504-69f2c2b80d.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tohov/OneDrive/Documents/GitHub/DAT250-experiments/exp2/lib/org.eclipse.persistence.jpa.modelgen_2.7.7.v20200504-69f2c2b80d.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tohov/OneDrive/Documents/GitHub/DAT250-experiments/exp2/lib/org.eclipse.persistence.jpars.source_2.7.7.v20200504-69f2c2b80d.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tohov/OneDrive/Documents/GitHub/DAT250-experiments/exp2/lib/org.eclipse.persistence.jpars_2.7.7.v20200504-69f2c2b80d.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

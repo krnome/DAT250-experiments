@@ -41,7 +41,7 @@ public class JpaTest {
 				
 				family.getMembers().add(person);
 				em.persist(person);
-				em.persist(family);
+				em.merge(family);
 			}
 		}
 		

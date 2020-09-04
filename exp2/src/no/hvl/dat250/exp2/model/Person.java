@@ -22,6 +22,7 @@ public class Person {
 	
 	private Family family;
 	
+	@Transient
 	private String nonsenseField = "";
 	
 	private List<Job> jobList = new ArrayList<Job>();
@@ -59,7 +60,7 @@ public class Person {
 		this.family = family;
 	}
 
-	@Transient
+	
 	public String getNonsenseField() {
 		return nonsenseField;
 	}
