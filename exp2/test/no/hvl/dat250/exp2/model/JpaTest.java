@@ -37,11 +37,12 @@ public class JpaTest {
 				Person person = new Person();
 				person.setFirstName("Fornavn " + i);
 				person.setLastName("Etternavn " + i);
-				em.persist(person);
-				
+				person.setFamily(family);
 				family.getMembers().add(person);
+				
+				
 				em.persist(person);
-				em.merge(family);
+				em.persist(family);
 			}
 		}
 		

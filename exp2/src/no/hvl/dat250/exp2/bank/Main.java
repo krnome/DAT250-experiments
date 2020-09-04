@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 public class Main {
 	
@@ -43,19 +44,32 @@ public class Main {
 		address.setId(1);
 		address.setStreet("Testeveien");
 		address.setNumber(1);
-		address.setResidents(new ArrayList<Person>());
-		address.getResidents().add(person);
+		
+		person.setAddresses(new ArrayList<Address>());
+		person.getAddresses().add(address);
 		
 		em.getTransaction().begin();
 		em.persist(bank);
 		em.persist(pincode);
 		em.persist(creditcard);
-		em.persist(person);
 		em.persist(address);
+		em.persist(person);
+		
 		
 		em.getTransaction().commit();
 		
 		em.close();
+		
+		em = factory.createEntityManager();
+		
+		em.getTransaction().begin();
+		Query q = em.createQuery("SELECT p from Person p");
+		Person p = (Person) q.getSingleResult();
+		
+		System.out.println("PERSON: " + p);
+		System.out.println("ADDRESS: " + p.getAddresses().get(0));
+		em.close();
+		
 	}
 
 }

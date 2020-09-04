@@ -14,6 +14,7 @@ public class Bank {
 	
 	private String name;
 
+	@OneToMany(mappedBy="issuedByBank")
 	private List<CreditCard> creditCards;
 	
 	
@@ -34,7 +35,7 @@ public class Bank {
 		this.name = name;
 	}
 
-	@OneToMany(mappedBy="issuedByBank")
+	
 	public List<CreditCard> getCreditCards() {
 		return creditCards;
 	}

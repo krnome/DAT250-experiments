@@ -3,6 +3,7 @@ package no.hvl.dat250.exp2.bank;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -17,9 +18,11 @@ public class Person {
 	@Id
 	private String name;
 	
-	
+	@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(name = "person_lives_at_address", joinColumns = @JoinColumn(name = "person_id"),inverseJoinColumns = @JoinColumn(name = "address_id"))
 	private List<Address> addresses;
 	
+	@OneToMany(mappedBy="owner")
 	private List<CreditCard> creditCards;
 	
 	
@@ -35,12 +38,7 @@ public class Person {
 
 
 
-	@ManyToMany
-	@JoinTable(
-			name = "person_lives_at_address",
-			joinColumns = @JoinColumn(name = "person_id"),
-			inverseJoinColumns = @JoinColumn(name = "address_id")
-			)
+	
 	public List<Address> getAddresses() {
 		return addresses;
 	}
@@ -49,7 +47,7 @@ public class Person {
 		this.addresses = addresses;
 	}
 
-	@OneToMany(mappedBy="owner")
+	
 	public List<CreditCard> getCreditCards() {
 		return creditCards;
 	}

@@ -17,10 +17,13 @@ public class CreditCard {
 	private int limit;
 	private int balance;
 	
+	//Ingen annotasjoner - blir koblet implisitt
 	private Pincode pincode;
 	
+	@ManyToOne
 	private Person owner;
 	
+	@ManyToOne
 	private Bank issuedByBank;
 	
 	
@@ -58,7 +61,7 @@ public class CreditCard {
 	}
 
 	
-	//Ingen annotasjoner - blir koblet implisitt
+	
 	public Pincode getPincode() {
 		return pincode;
 	}
@@ -67,7 +70,7 @@ public class CreditCard {
 		this.pincode = pincode;
 	}
 
-	@ManyToOne
+	
 	public Person getOwner() {
 		return owner;
 	}
@@ -77,7 +80,7 @@ public class CreditCard {
 	}
 
 	
-	@ManyToOne
+	
 	public Bank getIssuedByBank() {
 		return issuedByBank;
 	}

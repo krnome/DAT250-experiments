@@ -18,6 +18,7 @@ public class Address {
 	private String Street;
 	private int number;
 	
+	@ManyToMany(mappedBy="addresses")
 	private List<Person> residents;
 	
 	
@@ -46,7 +47,7 @@ public class Address {
 		this.number = number;
 	}
 
-	@ManyToMany(mappedBy="addresses")
+	
 	public List<Person> getResidents() {
 		return residents;
 	}
