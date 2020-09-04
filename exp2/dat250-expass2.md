@@ -15,12 +15,12 @@ I chose not to use the given Maven project, but followed [the Vogella tutorial](
 
 The tutorial included creating a small Todo-entity which can be found in the included code, in the package [no.hvl.dat250.exp2.todo](https://github.com/krnome/DAT250-experiments/tree/master/exp2/src/no/hvl/dat250/exp2/todo).
 Part of the experiment included inspecting the database tables - I chose to do this by logging into the database server from the command line.
-![Todos in the database](img/DBSelect.png)
+![Todos in the database](img/DBSelect.PNG)
 
 The next steps included creating several entities with relations: Family, Person and Job. These classes can be found in the included code, in the package [no.hv.dat250.exp2.model](https://github.com/krnome/DAT250-experiments/tree/master/exp2/src/no/hvl/dat250/exp2/model).
 
 Again, I inspected these tables by logging into the database server from the command line.
-![Model tables in the database](img/modelTables.png)
+![Model tables in the database](img/modelTables.PNG)
 
 ![Table for the family-entity](img/modelFamily.png)
 Table for the family entity
@@ -28,12 +28,12 @@ Table for the family entity
 
 The tutorials include some JUnit tests. These tests seem unfinished, as one of them involve deleting a family member without merging it back, bringing the number of people down to 39 - and another test asserting that the number of people is still 40, that then ends up giving an AssertionError. I was at first satisfied that the test that checks the family size being 40 succeeded, as this would mean implementing relations had succeeded. However, when I inspected the database, all entities in the Person table showed their family as being null.
 
-![First 5 results from the person table](img/personTable.png)
+![First 5 results from the person table](img/personTable.PNG)
 First 5 results from the person table - note FAMILY_ID is null for all of them
 
 The test adds a person to the family's list of members and then persists the Person and re-persists the family. I instead changed this to setting the person's family-attribute to the family, as according to the JPA-implementation, the Person is the owning side of the relation. This correctly set the family column in the actual database.
 
-![First 5 results from the fixed person table](img/personTable_fixed.png)
+![First 5 results from the fixed person table](img/personTable_fixed.PNG)
 
 ---
 
@@ -53,10 +53,10 @@ I had tried to implement the ManyToMany relation between Person and Address by u
 
 I chose to move all the relations-annotations to the attributes themselves - and this caused relations to be established correctly in the database.
 
-![Bank tables](img/bank_tables.png)
+![Bank tables](img/bank_tables.PNG)
 Tables for the bank domain model
 
-![Bank rows](img/bank_rows.png)
+![Bank rows](img/bank_rows.PNG)
 All the inserted rows, including relations
 
 After successfully implementing the domain model, the result is very similar to what I originally imagined last week. I did make some changes related to which entities were considered on the 'owning' side of the relation.
