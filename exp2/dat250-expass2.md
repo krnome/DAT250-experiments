@@ -5,7 +5,7 @@
 
 ### Installation: Derby Database
 
-I completed the Derby tutorial that was [linked in the assignment](http://db.apache.org/derby/papers/DerbyTut/index.html), without any issues. I created a table, inserted rows and update a row.
+I completed the Derby tutorial that was [linked in the assignment](http://db.apache.org/derby/papers/DerbyTut/index.html), without any issues. I created a table, inserted rows and updated a row.
 
 ---
 
