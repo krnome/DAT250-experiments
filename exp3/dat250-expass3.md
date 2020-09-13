@@ -75,12 +75,13 @@ db.orders.mapReduce(
 	mapFunction5,
 	reduceFunction5,
 	{
-		out: "result5" 
+		out: "teste5" 
 	}
 )
 ```
 
 The results:
+
 ![Map-Reduce results](img/mongo_additional_result.PNG)
 
 In the end, what I imagined as the ideal result may not be very different, and the actual result I got may be easier to use for expansions such as finding the item a customer has purchased most or least, which could theoretically be used for personalized ads in attempts to encourage the user to buy more of items the theoretical store knows they already buy some amount of - or when increasing the store's selection, one could use this Map-Reduce operation to find users that buy several of similar products, to target them with ads for the new product.
