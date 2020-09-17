@@ -58,7 +58,7 @@ Postman: Get-request after the Delete-request:
 
 ### Experiment 3: Swagger
 
-I investigated how Swagger could be used to specify the REST API. After some Googling, I have the impression that Swagger does not naturally support APIs made with the Spark framework without some extra work. The solutions I found involves either [using JAX-RS annotations and changing the routes to seperate classes to make the Swagger tools able to discover the routes by itself](https://serol.ro/posts/2016/swagger_sparkjava/), or using  [unofficial extensions](https://github.com/manusant/spark-swagger) and enable Swagger to generate definitions.
+I investigated how Swagger could be used to specify the REST API. After some Googling, I have the impression that Swagger does not naturally support APIs made with the Spark framework without some extra work. The solutions I found involves either [using JAX-RS annotations and changing the routes to seperate classes to make the Swagger tools able to discover the routes by itself](https://serol.ro/posts/2016/swagger_sparkjava/), or using  [unofficial extensions](https://github.com/manusant/spark-swagger) to let Swagger generate definitions.
 
 As the experiment asked us to *try to investigate*, I have not implemented any of these. I instead experimented with manually creating a Swagger specification on [SwaggerHub](https://app.swaggerhub.com/). 
 
