@@ -19,30 +19,39 @@ The implementation can be found in the included code, in the package [no.hvl.dat
 I changed the GetRequest- and PutRequest-classes that were included for the Counters-example to work with Todos, and used them to also implement a PostRequest-class, to confirm that the service worked as expected. I also tested the four operations in Postman.
 
 Postman: Get-request after two Todos were saved:
+
 ![Postman Get](img/todosGet.PNG)
 
 Postman: Post-request, returning the Todo in JSON:
+
 ![Postman Post](img/todosPost3.PNG)
 
 Postman: Get-request after the previous Post-request:
+
 ![Postman Get after Post](img/todosGetAfterPost.PNG)
 
 Postman: Get-request for specific Todo:
+
 ![Postman get 3](img/todosGet3.PNG)
 
 Postman: Put-request for specific Todo - returns the updated Todo in JSON:
+
 ![Postman Put](img/todosPut3.PNG)
 
 Screenshot from the Derby database confirming the JPA implementation works:
+
 ![Derby](img/derby_todos.PNG)
 
-Postman: Get all Todos after the Put-request
+Postman: Get all Todos after the Put-request:
+
 ![Postman Get after Put](img/todosGetAfterPut.PNG)
 
-Postman: Delete-request for specific Todo
+Postman: Delete-request for specific Todo:
+
 ![Postman: Delete](img/todosDelete.PNG)
 
-Postman: Get-request after the Delete-request
+Postman: Get-request after the Delete-request:
+
 ![Postman: Get after Delete](img/todosGetAfterDelete.PNG)
 
 
@@ -58,10 +67,12 @@ The result can be [seen on SwaggerHub](https://app.swaggerhub.com/apis/krnome/DA
 I have not implemented this specification actually being accessible from the running Jetty server, but I was able to make the API viewable in [Swagger's tools](https://app.swaggerhub.com/apis/krnome/DAT250_exp4_Todo_iot2/1.0.0), for an impression of what that would look like:
 
 Overview of the API:
+
 ![todos-api on SwaggerHub](img/todos_swagger.PNG)
 
 Get-requests for specific todos:
-![Get specific Todo on SwaggerHub](todos_swagger_getId.PNG)
+
+![Get specific Todo on SwaggerHub](img/todos_swagger_getId.PNG)
 
 
 
