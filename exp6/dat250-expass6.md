@@ -25,7 +25,7 @@ The tutorial then added a static `index.html` - as I understood it, to demonstra
 
 ### Experiment 2: Single-page Web Applications
 
-I completed the tutorial on the React framework that was [linked to in the assignment](https://reactjs.org/tutorial/tutorial.html). The code can be seen in this repository, [in the folder 2-spa](2-spa).
+I completed the tutorial on the React framework that was [linked to in the assignment](https://reactjs.org/tutorial/tutorial.html). The code can be seen in this repository, [in the folder 2-spa](2-spa). **NOTE**: I chose not to upload the applications `node_modules`-folder, as this was 160MB, containing over 42 000 files. Please let me know if this is required, and I will add it to the repository.
 
 In the tutorial, I completed a simple Tic-Tac-Toe game by using React. 
 
