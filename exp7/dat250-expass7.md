@@ -42,7 +42,7 @@ Screenshot showing fair dispatch - although as I said, I was unable to properly 
 
 ### Experiment 4 - Publish/Subscribe
 
-I completed the [tutorial on Publish/Subscribe for C#](https://www.rabbitmq.com/tutorials/tutorial-three-dotnet.html). In the tutorial I set up a named Exchange that used ```ExchangeType.Fanout``` to broadcast messages to all the queues the Exchange knows about, to implement a sort of logger. The code can be seen in this repository, in the folders for [the EmitLog program](DAT250-exp7/exp7-4-EmitLog) - the producer, and for [the ReceiveLogs program](/DAT250-exp7/exp-7-4-ReceiveLogs) - the consumer.
+I completed the [tutorial on Publish/Subscribe for C#](https://www.rabbitmq.com/tutorials/tutorial-three-dotnet.html). In the tutorial I set up a named Exchange that used ```ExchangeType.Fanout``` to broadcast messages to all the queues the Exchange knows about, to implement a sort of logger. The code can be seen in this repository, in the folders for [the EmitLog program](DAT250-exp7/exp7-4-EmitLog) - the producer, and for [the ReceiveLogs program](DAT250-exp7/exp-7-4-ReceiveLogs) - the consumer.
 
 The two consumers created "their own" non-durable, exclusive queues that are deleted when the consumers disconnect from RabbitMQ. The queues establish a relationship to the exchange through a *binding* by calling ```channel.QueueBind()```. By following the tutorial, I started one consumer that wrote to a log file, and a second consumer that printed incoming messages. When repeatedly executing the Producer with different arguments, the two consumers received the messages at the same time.
 
