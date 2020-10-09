@@ -48,7 +48,7 @@ The two consumers created "their own" non-durable, exclusive queues that are del
 
 Screenshot showing the producer on the top right, sending five messages to the exchange - and a consumer that prints messages on the top left, and a consumer that prints to a log file on the bottom right. The log file can be seen on the bottom right.
 
-[Publish/Subscribe](img/4-logCommandWindows.PNG)
+![Publish/Subscribe](img/4-logCommandWindows.PNG)
 
 Screenshot showing the different bindings and queues that were created throguh all tutorials, while the two consumers from the last experiment are still active, as can be seen by two queues having randomly generated names.
-[Bindings and queues](img/4-bindings.PNG)
+![Bindings and queues](img/4-bindings.PNG)
