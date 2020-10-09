@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAT250-exp7-2-Send", "DAT250-exp7\DAT250-exp7-2-Send.csproj", "{39855D34-EC0D-486B-9DF3-B9D4A19B5FF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAT250-exp7-2-Receive", "DAT250-exp7-Receive\DAT250-exp7-2-Receive.csproj", "{89959EB3-39FB-475E-89FE-17BAB85A8F26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exp7-3-NewTask", "NewTask\exp7-3-NewTask.csproj", "{BB04C367-27B2-4FCE-AE9E-C7156CA21292}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exp7-3-Worker", "exp7-3-Worker\exp7-3-Worker.csproj", "{6F6F0774-BAF8-4DAF-86E2-3ACA072D8848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exp7-4-EmitLog", "exp7-4-EmitLog\exp7-4-EmitLog.csproj", "{C4C0567E-AD35-4441-98C0-60644A914AC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exp-7-4-ReceiveLogs", "exp-7-4-ReceiveLogs\exp-7-4-ReceiveLogs.csproj", "{67BAD084-88E7-48EE-987A-E55BE9B86009}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39855D34-EC0D-486B-9DF3-B9D4A19B5FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39855D34-EC0D-486B-9DF3-B9D4A19B5FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39855D34-EC0D-486B-9DF3-B9D4A19B5FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39855D34-EC0D-486B-9DF3-B9D4A19B5FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89959EB3-39FB-475E-89FE-17BAB85A8F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89959EB3-39FB-475E-89FE-17BAB85A8F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89959EB3-39FB-475E-89FE-17BAB85A8F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89959EB3-39FB-475E-89FE-17BAB85A8F26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB04C367-27B2-4FCE-AE9E-C7156CA21292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB04C367-27B2-4FCE-AE9E-C7156CA21292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB04C367-27B2-4FCE-AE9E-C7156CA21292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB04C367-27B2-4FCE-AE9E-C7156CA21292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6F0774-BAF8-4DAF-86E2-3ACA072D8848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6F0774-BAF8-4DAF-86E2-3ACA072D8848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6F0774-BAF8-4DAF-86E2-3ACA072D8848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6F0774-BAF8-4DAF-86E2-3ACA072D8848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4C0567E-AD35-4441-98C0-60644A914AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4C0567E-AD35-4441-98C0-60644A914AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4C0567E-AD35-4441-98C0-60644A914AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4C0567E-AD35-4441-98C0-60644A914AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67BAD084-88E7-48EE-987A-E55BE9B86009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67BAD084-88E7-48EE-987A-E55BE9B86009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67BAD084-88E7-48EE-987A-E55BE9B86009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67BAD084-88E7-48EE-987A-E55BE9B86009}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {597D67D1-3203-4C0F-AB84-F45A89FE00FC}
+	EndGlobalSection
+EndGlobal
